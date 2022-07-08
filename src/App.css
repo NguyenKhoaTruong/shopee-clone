@@ -1197,8 +1197,8 @@ i.home-product-item-like-fill {
 }
 
 .mark-img {
-  background-image: url('/public/logo-da-dang-ky-bo-cong-thuong-mau-do.jpg');
   width: 180px;
   height: 60px;
+  background-image: url('/public/logo-da-dang-ky-bo-cong-thuong-mau-do.jpg');
   background-size: cover;
 }

@@ -5,6 +5,7 @@ import React from 'react';
 function App() {
   return (
     <React.Fragment>
+
       <header className="header">
         <div className="grid">
           <nav className="header__navbar">
@@ -1340,7 +1341,7 @@ function App() {
               <div className="grid__column-2-4">
                 <h3 className="footer-heading">Vào của hàng trên ứng dụng</h3>
                 <div className="footer-downlod">
-                  <img src="./accset/img/qr_code.png" alt="" className="footer-download-img" />
+                  <img className="footer-download-img" />
                   <div className="footer-download__App">
                     <a href="#" className="download-link"><img src="./accset/img/gg_play.png" alt=""
                       className="footer-download__img" /></a>
@@ -1368,7 +1369,7 @@ function App() {
                 </ul>
               </div>
               <div className="footer-child-mark">
-                <img src="./accset/img/logo-da-dang-ky-bo-cong-thuong-mau-do.jpg" alt="" className="mark-img" />
+                <img className="mark-img" />
                 <span>Công ty TNHH TICKID</span>
                 <p className="mark-locati">Địa chỉ : số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình,
                   Thành phố Hà Nội, Việt Nam</p>
