@@ -86,7 +86,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: var(--white-color);
 }
@@ -350,6 +350,8 @@
   background-image: url('/public/logo-full-white.png');
   line-height: 79px;
   width: 150px;
+  height: 46.5px;
+  background-size: cover;
 }
 
 
@@ -1166,6 +1168,16 @@ i.home-product-item-like-fill {
   background-image: url('/public/gg_play.png');
   height: 20px;
   margin-left: 16px;
+  width: 94px;
+  background-size: cover;
+}
+
+.footer-download__img-appstore {
+  background-image: url('/public/app_store.png');
+  height: 20px;
+  margin-left: 16px;
+  width: 80px;
+  background-size: cover;
 }
 
 .footer-heading-list {

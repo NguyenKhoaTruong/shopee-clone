@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './base.css';
 import React from 'react';
+import * as Icon from 'react-bootstrap-icons';
 function App() {
   return (
     <React.Fragment>
@@ -31,10 +32,12 @@ function App() {
               </li>
               <li className="header__navbar-item header__no-pointer">Kết nối
                 <a href="" className="header__navbar-icon--link">
-                  <i className=" header__navbar-icon fa-brands fa-facebook "></i>
+                  <Icon.Facebook size={18} color="white" style={{ background: "" }} className=" header__navbar-icon fa-brands fa-facebook" />
+                  {/* <i className=" header__navbar-icon fa-brands fa-facebook "></i> */}
                 </a>
                 <a href="" className="header__navbar-icon--link">
-                  <i className=" header__navbar-icon fa-brands fa-instagram"></i>
+                  <Icon.Instagram size={18} color="white" style={{ background: "" }} className=" header__navbar-icon fa-brands fa-instagram" />
+                  {/* <i className=" header__navbar-icon fa-brands fa-instagram"></i> */}
                 </a>
               </li>
             </ul>
@@ -42,8 +45,11 @@ function App() {
               <li className="header__navbar-item header__notify-item--hover">
                 <a href="#" className="header__navbar-item-link">
                   <a href="" className="header__navbar-icon--link">
-                    <i className=" header__navbar-icon far fa-bell"></i>Thông
-                    báo</a>
+                    <Icon.Bell size={13} color="white" style={{ marginRight: '2px' }} className=" header__navbar-icon far fa-bell" />
+                    {/* <i className=" header__navbar-icon far fa-bell"></i> */}
+                    Thông
+                    báo
+                  </a>
                   <div className="header__notify">
                     <header className="header__notify-header">
                       <p>Thông báo mới nhận </p>
@@ -97,15 +103,17 @@ function App() {
               <li className="header__navbar-item">
                 <a href="#" className="header__navbar-item-link">
                   <a href="" className="header__navbar-icon--link">
-                    <i className=" header__navbar-icon fa-solid
-                                                fa-circle-question"></i>Hỗ trợ</a>
+                    {/* <i className=" header__navbar-icon fa-solid fa-circle-question"></i> */}
+                    <Icon.QuestionCircleFill size={13} color="white" style={{ marginRight: '2px' }} className=" header__navbar-icon fa-solid fa-circle-question" />
+                    Hỗ trợ</a>
                 </a>
               </li>
               <li className="header__navbar-item header__language--hover">
                 <a href="#" className="header__navbar-item-link">
                   <a href="" className="header__navbar-icon--link">
-                    <i className=" header__navbar-icon fa-solid fa-globe"></i>Ngôn
-                    ngữ
+                    {/* <i className=" header__navbar-icon fa-solid fa-globe"></i> */}
+                    <Icon.Globe size={13} color="white" style={{ marginRight: '2px' }} className=" header__navbar-icon fa-solid fa-circle-question" />
+                    Ngôn ngữ
                     <i className="fa-solid fa-chevron-down"></i></a>
                   <div className="header_language">
                     <p className="header_language-vn">Tiếng Viêt</p>
@@ -147,7 +155,7 @@ function App() {
           </nav>
           <div className="header-with--seach">
             <div className="header-logo">
-              <img src="./public/logo-full-white.png" alt="" className="header-logo-img" />
+              <img className="header-logo-img" />
             </div>
             {/* <!-- Seach --> */}
             <div className="header-seach">
@@ -166,12 +174,16 @@ function App() {
                 </div>
               </div>
               <div className="header-seach-select">
-                <span className="header-seach-select-label">Trong shop<i
-                  className="fa-solid fa-angle-down header-seach-select-icon"></i></span>
+                <span className="header-seach-select-label">Trong shop
+                  <Icon.ChevronDown size={15} color="black" className=" fa-solid fa-angle-down header-seach-select-icon" />
+                  {/* <i
+                    className="fa-solid fa-angle-down header-seach-select-icon"></i> */}
+                </span>
                 <ul className="header-seach-option">
                   <li className="header-seach-option-item header-seach-option-item-active "><span>Trong
                     shop</span>
-                    <i className="fa-solid fa-check"></i>
+                    <Icon.Check size={15} color="#EE4D2D" style={{ marginLeft: '5px' }} className=" fa-solid fa-check" />
+                    {/* <i className="fa-solid fa-check"></i> */}
                   </li>
                   <li className="header-seach-option-item"><span>Ngoai shop</span>
                     <i className="fa-solid fa-check"></i>
@@ -179,13 +191,15 @@ function App() {
                 </ul>
               </div>
               <button className="header-seach-btn">
-                <i className=" header-seach-btn-icon fa-solid fa-magnifying-glass"></i>
+                <Icon.Search size={15} color="white" style={{ marginRight: '2px', }} className=" header-seach-btn-icon fa-solid fa-magnifying-glass" />
+                {/* <i className=" header-seach-btn-icon fa-solid fa-magnifying-glass"></i> */}
               </button>
             </div>
             {/* <!-- Cart --> */}
             <div className="header-cart">
               <div className="header-cart-wrap">
-                <i className="header-cart-icon fa-solid fa-cart-shopping"></i>
+                <Icon.Cart3 size={25} color="white" style={{ marginRight: '2px' }} className=" header-cart-icon fa-solid fa-cart-shopping" />
+                {/* <i className="header-cart-icon fa-solid fa-cart-shopping"></i> */}
                 <span className="header-cart-wrap-notice">3</span>
                 {/* <!-- No Cart:header-cart-list--no-cart --> */}
                 <div className="header-cart-list ">
@@ -345,7 +359,10 @@ function App() {
           <div className="grid__row app__content">
             <div className="grid__column-2">
               <nav className="category">
-                <h3 className="category-heading heading"><i className="heading-icon fa-solid fa-list"></i> Danh mục
+                <h3 className="category-heading heading">
+                  <Icon.ListTask size={14} color="black" className=" heading-icon fa-solid fa-list" />
+                  {/* <i className="heading-icon fa-solid fa-list"></i> */}
+                  Danh mục
                 </h3>
                 <ul className="category-list">
                   <li className="category-item category-item--active">
@@ -386,7 +403,9 @@ function App() {
                 <button className="btn home-finter-btn">Bán Chạy</button>
                 <div className="select-expensive"><span className="select-ex">
                   Giá
-                </span> <i className="select-ex-icon fa-solid fa-chevron-down"></i>
+                </span>
+                  <Icon.ChevronDown size={14} color="black" className=" select-ex-icon fa-solid fa-chevron-down" />
+                  {/* <i className="select-ex-icon fa-solid fa-chevron-down"></i> */}
                   {/* <!-- list option --> */}
                   <ul className="select-ex-list">
                     <li className="select-ex-item"><a href="#" className="select-ex-link">Giá thấp đến cao</a>
@@ -401,10 +420,12 @@ function App() {
                   </span>
                   <div className="home-finter_page-control">
                     <a href="#" className="home-finter_page-btn home-finter_page-btn--disable">
-                      <i className="home-finter_page-control-icon fa-solid fa-chevron-left"></i>
+                      <Icon.ChevronLeft size={14} color="gray" className=" home-finter_page-control-icon fa-solid fa-chevron-left" />
+                      {/* <i className="home-finter_page-control-icon fa-solid fa-chevron-left"></i> */}
                     </a>
                     <a href="#" className="home-finter_page-btn">
-                      <i className="home-finter_page-control-icon fa-solid fa-chevron-right"></i>
+                      <Icon.ChevronRight size={14} color="black" className=" home-finter_page-control-icon fa-solid fa-chevron-left" />
+                      {/* <i className="home-finter_page-control-icon fa-solid fa-chevron-right"></i> */}
                     </a>
                   </div>
                 </div>
@@ -1324,16 +1345,24 @@ function App() {
                 <ul className="footer-list">
                   <li className="footer-item">
                     <a href="" className="footer-item__link">
-                      <i className="fa-brands fa-facebook footer-item-icon"></i>Facebook</a>
+                      <Icon.Facebook size={14} color="gray" className=" fa-brands fa-facebook footer-item-icon" />
+                      {/* <i className="fa-brands fa-facebook footer-item-icon"></i> */}
+                      Facebook</a>
                   </li>
                   <li className="footer-item">
 
-                    <a href="" className="footer-item__link"><i
-                      className="fa-brands fa-instagram-square footer-item-icon"></i>Instagram</a>
+                    <a href="" className="footer-item__link">
+                      <Icon.Instagram size={14} color="gray" className=" fa-brands fa-instagram-square footer-item-icon" />
+                      {/* <i
+                        className="fa-brands fa-instagram-square footer-item-icon"></i> */}
+                      Instagram</a>
                   </li>
                   <li className="footer-item">
-                    <a href="" className="footer-item__link"><i
-                      className="fa-brands fa-linkedin footer-item-icon"></i>Linkedin</a>
+                    <a href="" className="footer-item__link">
+                      <Icon.Linkedin size={14} color="gray" className=" fa-brands fa-linkedin footer-item-icon" />
+                      {/* <i
+                      className="fa-brands fa-linkedin footer-item-icon"></i> */}
+                      Linkedin</a>
                   </li>
                 </ul>
               </div>
@@ -1343,10 +1372,11 @@ function App() {
                 <div className="footer-downlod">
                   <img className="footer-download-img" />
                   <div className="footer-download__App">
-                    <a href="#" className="download-link"><img src="./accset/img/gg_play.png" alt=""
-                      className="footer-download__img" /></a>
-                    <a href="#" className="download-lick"><img src="./accset/img/app_store.png" alt=""
-                      className="footer-download__img" /></a>
+                    <a href="#" className="download-link">
+                      <img
+                        className="footer-download__img" /></a>
+                    <a href="#" className="download-lick"><img
+                      className="footer-download__img-appstore" /></a>
                   </div>
                 </div>
               </div>
