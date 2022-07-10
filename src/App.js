@@ -62,7 +62,7 @@ function App() {
                           <div className="header__notify-info">
                             <span className="header__notify-name">Xác thực nguồn gốc chính hãng Sản
                               Phẩm</span>
-                            <span className="header__notify-description">so teams can deliver better
+                            <span className="header__notify-description">So teams can deliver better
                               products, faster.</span>
                           </div>
                         </a>
@@ -114,9 +114,11 @@ function App() {
                     {/* <i className=" header__navbar-icon fa-solid fa-globe"></i> */}
                     <Icon.Globe size={13} color="white" style={{ marginRight: '2px' }} className=" header__navbar-icon fa-solid fa-circle-question" />
                     Ngôn ngữ
-                    <i className="fa-solid fa-chevron-down"></i></a>
+                    <Icon.ChevronDown size={13} color="white" style={{ marginLeft: '2px' }} className=" fa-solid fa-chevron-down" />
+                    {/* <i className="fa-solid fa-chevron-down"></i> */}
+                  </a>
                   <div className="header_language">
-                    <p className="header_language-vn">Tiếng Viêt</p>
+                    <p className="header_language-vn">Tiếng Việt</p>
                     <p className="header_language-english">English</p>
                   </div>
                 </a>
@@ -162,13 +164,13 @@ function App() {
               <div className="header-seach-wrap">
                 <input type="text" className="header-seach-input" placeholder="Nhập để tìm kiếm sản phẩm" />
                 <div className="header-seach-history">
-                  <h3 className="header-seach-heading">Lich su tim kiem</h3>
+                  <h3 className="header-seach-heading">Lịch sử tìm kiếm</h3>
                   <ul className="header-seach-list">
                     <li className="header-seach-item">
-                      <a href="">Sua chua Vinamilk</a>
+                      <a href="">Sữa chua Vinamilk</a>
                     </li>
                     <li className="header-seach-item">
-                      <a href="">Kem huong dau</a>
+                      <a href="">Kem hương dâu</a>
                     </li>
                   </ul>
                 </div>
@@ -182,10 +184,10 @@ function App() {
                 <ul className="header-seach-option">
                   <li className="header-seach-option-item header-seach-option-item-active "><span>Trong
                     shop</span>
-                    <Icon.Check size={15} color="#EE4D2D" style={{ marginLeft: '5px' }} className=" fa-solid fa-check" />
+                    <Icon.Check size={16} color="#EE4D2D" style={{ marginLeft: '5px' }} className=" fa-solid fa-check" />
                     {/* <i className="fa-solid fa-check"></i> */}
                   </li>
-                  <li className="header-seach-option-item"><span>Ngoai shop</span>
+                  <li className="header-seach-option-item"><span>Ngoài shop</span>
                     <i className="fa-solid fa-check"></i>
                   </li>
                 </ul>
@@ -369,7 +371,7 @@ function App() {
                     <a href="#" className="category-item__link">Thời Trang</a>
                   </li>
                   <li className="category-item">
-                    <a href="#" className="category-item__link">Trang sức Nam </a>
+                    <a href="#" className="category-item__link">Trang Sức Nam </a>
                   </li>
                   <li className="category-item">
                     <a href="#" className="category-item__link">Trang Phục Ngành Nghề </a>
@@ -389,15 +391,15 @@ function App() {
                   <li className="category-item">
                     <a href="#" className="category-item__link">Cà vạt & Nơ cổ</a>
                   </li>
-                  <li className="category-item">
+                  {/* <li className="category-item">
                     <a href="#" className="category-item__link">Xích chó</a>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
             <div className="grid__column-10">
               <div className="home-finter">
-                <span className="home-finter-label">Sắp xếp theo</span>
+                <span className="home-finter-label">Sắp Xếp Theo</span>
                 <button className="btn home-finter-btn">Phổ Biến</button>
                 <button className="btn home-finter-btn btn-primary">Mới Nhất</button>
                 <button className="btn home-finter-btn">Bán Chạy</button>
@@ -446,14 +448,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -463,7 +470,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">60%</span>
@@ -487,14 +496,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">4525 đã bán</span>
                       </div>
@@ -504,7 +518,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">30%</span>
@@ -529,14 +545,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">888 đã bán</span>
                       </div>
@@ -546,7 +567,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -570,14 +593,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -587,7 +615,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -611,14 +641,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -628,7 +663,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -652,14 +689,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -669,7 +711,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -693,14 +737,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold"> đã bán</span>
                       </div>
@@ -710,7 +759,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -734,14 +785,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">585 đã bán</span>
                       </div>
@@ -751,7 +807,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">26%</span>
@@ -775,14 +833,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">895 đã bán</span>
                       </div>
@@ -792,7 +855,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">38%</span>
@@ -816,14 +881,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">552 đã bán</span>
                       </div>
@@ -833,7 +903,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -857,14 +929,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">4525 đã bán</span>
                       </div>
@@ -874,7 +951,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">30%</span>
@@ -899,14 +978,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">888 đã bán</span>
                       </div>
@@ -916,7 +1000,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -940,14 +1026,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -957,7 +1048,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -981,14 +1074,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -998,7 +1096,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -1022,14 +1122,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">88 đã bán</span>
                       </div>
@@ -1039,7 +1144,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -1063,14 +1170,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold"> đã bán</span>
                       </div>
@@ -1080,7 +1192,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -1104,14 +1218,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">585 đã bán</span>
                       </div>
@@ -1121,7 +1240,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">26%</span>
@@ -1145,14 +1266,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">895 đã bán</span>
                       </div>
@@ -1162,7 +1288,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">38%</span>
@@ -1186,14 +1314,19 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{ color: '#FFCE3e' }} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
                         </div>
                         <span className="home-product-item-sold">552 đã bán</span>
                       </div>
@@ -1203,7 +1336,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -1227,14 +1362,20 @@ function App() {
                       <div className="home-product-item-action">
                         <span className="home-product-item-like home-product-item-liked">
                           <i className=" home-product-item-like-no-like fa-solid fa-heart"></i>
-                          <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i>
+                          <Icon.Hearts size={15} color="red" style={{}} className=" home-product-item-like  fa-solid fa-heart-circle-check" />
+                          {/* <i className="home-product-item-like  fa-solid fa-heart-circle-check"></i> */}
                         </span>
                         <div className="home-product-item-rating">
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          <Icon.Star size={15} color="gray" style={{}} className=" home-product-item-star--gold fa-solid fa-star" />
+                          {/* <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
                           <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="home-product-item-star--gold fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
+                          <i className="home-product-item-star--gold fa-solid fa-star"></i> */}
+                          <Icon.Star size={15} color="gray" style={{}} className=" fa-solid fa-star" />
+                          {/* <i className="fa-solid fa-star"></i> */}
                         </div>
                         <span className="home-product-item-sold">552 đã bán</span>
                       </div>
@@ -1244,7 +1385,9 @@ function App() {
 
                       </div>
                       <div className="home-product-item_favourite">
-                        <i className="fa-solid fa-check"></i><span>Yêu Thích</span>
+                        <Icon.Check size={15} color="white" style={{}} className=" fa-solid fa-check" />
+                        {/* <i className="fa-solid fa-check"></i> */}
+                        <span>Yêu Thích</span>
                       </div>
                       <div className="home-product-item-sale-off">
                         <span className="home-product-item__sale-off-percent">3%</span>
@@ -1259,7 +1402,8 @@ function App() {
               <ul className="pagination grid__product--pagination">
                 <li className="pagination-item ">
                   <a href="#" className="pagination--link">
-                    <i href="" className="pagination-item--icon fa-solid fa-chevron-left"></i>
+                    <Icon.ChevronLeft size={15} color="gray" style={{}} className="pagination-item--icon fa-solid fa-chevron-left" />
+                    {/* <i href="" className="pagination-item--icon fa-solid fa-chevron-left"></i> */}
                   </a>
                 </li>
                 <li className="pagination-item pagination-item-active">
@@ -1285,7 +1429,8 @@ function App() {
                 </li>
                 <li className="pagination-item">
                   <a href="#" className="pagination--link">
-                    <i href="" className="pagination-item--icon fa-solid fa-chevron-right"></i>
+                    <Icon.ChevronRight size={15} color="gray" style={{}} className="pagination-item--icon fa-solid fa-chevron-right" />
+                    {/* <i href="" className="pagination-item--icon fa-solid fa-chevron-right"></i> */}
                   </a>
                 </li>
               </ul>
@@ -1403,7 +1548,7 @@ function App() {
                 <span>Công ty TNHH TICKID</span>
                 <p className="mark-locati">Địa chỉ : số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình,
                   Thành phố Hà Nội, Việt Nam</p>
-                <p className="mark-locati">Mã số doanh nghiệp:0106773786 do sở Kế hoạch & Đầu tư TP Hà Nội cấp
+                <p className="mark-locati">Mã số doanh nghiệp:0106773786 do sở Kế hoạch {'&'} Đầu tư TP Hà Nội cấp
                   lần đầu ngày 10/02/2015</p>
                 <p className="mark-locati">Địa chỉ :118/1/9 Đ. Lê Văn Thọ, Phường 11, Gò Vấp, Thành phố Hồ Chí
                   Minh</p>

@@ -1071,6 +1071,7 @@ i.home-product-item-like-fill {
   right: 0;
   background-color: rgba(255, 216, 64, 0.94);
   border-top-right-radius: 2px;
+  display: grid;
 }
 
 .home-product-item__sale-off-percent {
